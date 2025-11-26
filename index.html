@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MordX - Hosting y Desarrollo de Código</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,6 +16,7 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#lenguajes-info">Lenguajes</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -52,21 +53,59 @@
 
     <section id="habilidades" class="section dark">
         <div class="container">
-            <h3>Mi Experiencia</h3>
-            <div class="skills-animation">
-                Tengo experiencia en: <span id="skill-text">HTML</span>
+            <h3>Mi Experiencia Profesional</h3>
+            <p class="subtitle">Con años de dedicación, domino las siguientes tecnologías y lenguajes:</p>
+            <div class="skills-showcase">
+                <span class="intro-text">Tengo una sólida experiencia en:</span> 
+                <span id="skill-text" class="animated-skill">HTML</span>
+            </div>
+            <div class="image-placeholder">
+                
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="section">
+    <section id="lenguajes-info" class="section">
+        <div class="container">
+            <h3>¿Qué puedo hacer con cada lenguaje?</h3>
+            <div class="language-grid">
+                <div class="lang-card">
+                    <h4>HTML</h4>
+                    <p>Estructuración de contenido para la web, creación de la base de cualquier página y aplicación web.</p>
+                </div>
+                <div class="lang-card">
+                    <h4>CSS</h4>
+                    <p>Estilización y diseño visual de páginas web, desde colores y fuentes hasta animaciones complejas.</p>
+                </div>
+                <div class="lang-card">
+                    <h4>JAVA</h4>
+                    <p>Desarrollo de aplicaciones robustas y escalables para escritorio, móviles y sistemas empresariales.</p>
+                </div>
+                <div class="lang-card">
+                    <h4>JavaScript (JS)</h4>
+                    <p>Creación de interactividad en la web, desarrollo front-end, back-end (Node.js) y Discord bots.</p>
+                </div>
+                <div class="lang-card">
+                    <h4>Batch</h4>
+                    <p>Automatización de tareas en sistemas Windows, creación de scripts para la gestión de archivos y procesos.</p>
+                </div>
+                <div class="lang-card">
+                    <h4>Lua</h4>
+                    <p>Scripting ligero y potente, ideal para desarrollo de juegos, plugins y sistemas embebidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section dark-alt">
         <div class="container">
             <h3>Hablemos de tu Proyecto</h3>
-            <p>Listo para empezar? Contáctame para una cotización o consulta.</p>
+            <p class="subtitle">Estoy listo para ayudarte a llevar tu idea al siguiente nivel.</p>
             <form>
-                <input type="text" placeholder="Tu Nombre" required>
+                <input type="text" placeholder="Tu Nombre Completo" required>
                 <input type="email" placeholder="Tu Correo Electrónico" required>
-                <textarea placeholder="Describe tu proyecto..." required></textarea>
+                <input type="text" placeholder="Asunto del Mensaje" required>
+                <textarea placeholder="Describe tu proyecto o consulta en detalle..." required></textarea>
                 <button type="submit" class="btn">Enviar Mensaje</button>
             </form>
         </div>
@@ -79,7 +118,7 @@
     </footer>
 
     <script>
-        const skills = ["HTML", "CSS", "JAVA", "JS", "BATCH", "LUA"];
+        const skills = ["HTML", "CSS", "JAVA", "JavaScript", "Batch", "Lua"];
         const skillText = document.getElementById('skill-text');
         let index = 0;
 
@@ -88,7 +127,7 @@
             index = (index + 1) % skills.length;
         }
 
-        setInterval(updateSkill, 2000); 
+        setInterval(updateSkill, 2500); 
     </script>
 </body>
 </html>
