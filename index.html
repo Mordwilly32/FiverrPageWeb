@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MordX - Hosting y Desarrollo de Código</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -25,27 +26,61 @@
 
     <section id="inicio" class="hero">
         <div class="container">
-            <h2>Soluciones de **Hosting** y **Desarrollo** de Código</h2>
-            <p>Impulsa tus proyectos con un hosting confiable y código profesional. Especializados en **Discord Bots**.</p>
-            <a href="#servicios" class="btn">Ver Servicios</a>
+            <div class="hero-content">
+                <h2>Impulsa la **Productividad** de tus Proyectos</h2>
+                <p>Ofrecemos soluciones de hosting robustas y desarrollo de código experto, llevando tus ideas al siguiente nivel.</p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn primary">Empezar un Proyecto</a>
+                    <a href="#contacto" class="btn secondary">Contactar Ahora</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                </div>
         </div>
     </section>
 
     <section id="servicios" class="section">
         <div class="container">
-            <h3>Nuestros Servicios</h3>
-            <div class="grid">
-                <div class="service-card">
-                    <h4>🚀 Hosting de Discord Bots</h4>
-                    <p>Mantén tu bot online 24/7 con baja latencia y monitoreo constante.</p>
+            <div class="services-intro">
+                <h3>Ofrecemos una variedad de **Servicios** Excepcionales</h3>
+                <p>Desde el alojamiento de tus bots hasta el desarrollo de soluciones a medida, MordX es tu socio tecnológico ideal.</p>
+                <a href="#contacto" class="btn">Solicitar Consulta</a>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-robot"></i>
+                    <h4>Hosting de Discord Bots</h4>
+                    <p>Mantén tu bot online 24/7 con alto rendimiento y soporte técnico.</p>
                 </div>
-                <div class="service-card">
-                    <h4>🌐 Desarrollo Web Personalizado</h4>
-                    <p>Diseño y desarrollo de páginas web modernas, optimizadas y funcionales.</p>
+                <div class="service-item">
+                    <i class="fas fa-globe"></i>
+                    <h4>Desarrollo Web Personalizado</h4>
+                    <p>Diseño de páginas web modernas, responsivas y optimizadas para cualquier dispositivo.</p>
                 </div>
-                <div class="service-card">
-                    <h4>🛠️ Desarrollo de Código a Medida</h4>
-                    <p>Soluciones de software, scripts y herramientas en diversos lenguajes de programación.</p>
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h4>Desarrollo de Código a Medida</h4>
+                    <p>Soluciones de software, scripts y herramientas eficientes en diversos lenguajes.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-server"></i>
+                    <h4>Hosting de Aplicaciones</h4>
+                    <p>Servicios de hosting escalables para tus aplicaciones y proyectos web.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Optimización de Rendimiento</h4>
+                    <p>Mejoramos la velocidad y eficiencia de tus bots y aplicaciones.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Seguridad y Mantenimiento</h4>
+                    <p>Garantizamos la seguridad y el correcto funcionamiento continuo de tus proyectos.</p>
                 </div>
             </div>
         </div>
@@ -58,9 +93,6 @@
             <div class="skills-showcase">
                 <span class="intro-text">Tengo una sólida experiencia en:</span> 
                 <span id="skill-text" class="animated-skill">HTML</span>
-            </div>
-            <div class="image-placeholder">
-                
             </div>
         </div>
     </section>
@@ -99,14 +131,14 @@
 
     <section id="contacto" class="section dark-alt">
         <div class="container">
-            <h3>Hablemos de tu Proyecto</h3>
-            <p class="subtitle">Estoy listo para ayudarte a llevar tu idea al siguiente nivel.</p>
+            <h3>Ponte en Contacto</h3>
+            <p class="subtitle">Estoy listo para ayudarte a llevar tu idea al siguiente nivel. Describe tu proyecto y te responderé lo antes posible.</p>
             <form>
                 <input type="text" placeholder="Tu Nombre Completo" required>
                 <input type="email" placeholder="Tu Correo Electrónico" required>
                 <input type="text" placeholder="Asunto del Mensaje" required>
                 <textarea placeholder="Describe tu proyecto o consulta en detalle..." required></textarea>
-                <button type="submit" class="btn">Enviar Mensaje</button>
+                <button type="submit" class="btn primary">Enviar Mensaje</button>
             </form>
         </div>
     </section>
@@ -117,17 +149,6 @@
         </div>
     </footer>
 
-    <script>
-        const skills = ["HTML", "CSS", "JAVA", "JavaScript", "Batch", "Lua"];
-        const skillText = document.getElementById('skill-text');
-        let index = 0;
-
-        function updateSkill() {
-            skillText.textContent = skills[index];
-            index = (index + 1) % skills.length;
-        }
-
-        setInterval(updateSkill, 2500); 
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
