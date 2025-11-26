@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MordX - Hosting y Desarrollo de Código</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MordX</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Soluciones de **Hosting** y **Desarrollo** de Código</h2>
+            <p>Impulsa tus proyectos con un hosting confiable y código profesional. Especializados en **Discord Bots**.</p>
+            <a href="#servicios" class="btn">Ver Servicios</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="section">
+        <div class="container">
+            <h3>Nuestros Servicios</h3>
+            <div class="grid">
+                <div class="service-card">
+                    <h4>🚀 Hosting de Discord Bots</h4>
+                    <p>Mantén tu bot online 24/7 con baja latencia y monitoreo constante.</p>
+                </div>
+                <div class="service-card">
+                    <h4>🌐 Desarrollo Web Personalizado</h4>
+                    <p>Diseño y desarrollo de páginas web modernas, optimizadas y funcionales.</p>
+                </div>
+                <div class="service-card">
+                    <h4>🛠️ Desarrollo de Código a Medida</h4>
+                    <p>Soluciones de software, scripts y herramientas en diversos lenguajes de programación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section dark">
+        <div class="container">
+            <h3>Mi Experiencia</h3>
+            <div class="skills-animation">
+                Tengo experiencia en: <span id="skill-text">HTML</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container">
+            <h3>Hablemos de tu Proyecto</h3>
+            <p>Listo para empezar? Contáctame para una cotización o consulta.</p>
+            <form>
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Correo Electrónico" required>
+                <textarea placeholder="Describe tu proyecto..." required></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MordX. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const skills = ["HTML", "CSS", "JAVA", "JS", "BATCH", "LUA"];
+        const skillText = document.getElementById('skill-text');
+        let index = 0;
+
+        function updateSkill() {
+            skillText.textContent = skills[index];
+            index = (index + 1) % skills.length;
+        }
+
+        setInterval(updateSkill, 2000); 
+    </script>
+</body>
+</html>
